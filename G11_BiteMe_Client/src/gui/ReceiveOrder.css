@@ -1,0 +1,60 @@
+
+.root {
+	-fx-background-image: url("../images/User_Orders.png");
+    -fx-background-size: cover; /* Adjusts the size of the image to cover the entire region */
+    -fx-background-position: center center; /* Moves the image up by 20 pixels */
+    -fx-background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+/* Style for TableView */
+.table-view {
+    -fx-border-color: #cccccc; /* Light gray border */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-background-radius: 5px; /* Rounded background */
+    -fx-padding: 10px; /* Padding inside the table */
+}
+
+/* Optional: Hover effect for TableView */
+.table-view:hover {
+    -fx-border-color: #aaaaaa; /* Slightly darker border on hover */
+}
+
+#receiveButton{
+    -fx-background-color: #f8f8f8; /* Light background color to contrast with the dark background */
+    -fx-border-color: #ccc; /* Soft border for a subtle outline */
+    -fx-border-width: 2px; /* Width of the border */
+    -fx-text-fill: #333; /* Dark text color for readability */
+    -fx-padding: 10px 20px; /* More padding to make the button larger */
+    -fx-background-radius: 5px; /* Rounded corners for a modern look */
+    -fx-border-radius: 5px; /* Border radius to match the background */
+    -fx-font-size: 16px; /* Larger font size for better readability */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0, 0); /* Adding subtle shadow for better visual appearance */
+    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#receiveButton:hover{
+    -fx-background-color: #e0e0e0; /* Slightly darker background on hover */
+    -fx-text-fill: #000; /* Darker text color on hover */
+}
+
+#btnBack {
+    -fx-background-color: #f8f8f8; /* Light background color to contrast with the dark background */
+    -fx-border-color: #ccc; /* Soft border for a subtle outline */
+    -fx-border-width: 2px; /* Width of the border */
+    -fx-text-fill: #333; /* Dark text color for readability */
+    -fx-padding: 5px 20px; /* Padding to make the buttons more substantial */
+    -fx-background-radius: 5px; /* Rounded corners for a modern look */
+    -fx-border-radius: 5px; /* Border radius to match the background */
+    -fx-font-size: 12px; /* Slightly larger font size for better readability */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0, 0); /* Adding subtle shadow for better visual appearance */
+    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#btnBack:hover {
+    -fx-background-color: #e0e0e0; /* Slightly darker background on hover */
+    -fx-text-fill: #000; /* Darker text color on hover */
+}

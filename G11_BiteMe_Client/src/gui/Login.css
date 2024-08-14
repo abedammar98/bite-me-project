@@ -1,0 +1,67 @@
+
+.root {
+    -fx-background-image: url("../images/BiteMe_Login.png");
+    -fx-background-size: cover; /* Adjusts the size of the image to cover the entire region */
+    -fx-background-position: center center; /* Moves the image up by 20 pixels */
+    -fx-background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+#btnLogin {
+    -fx-background-color: #f8f8f8; /* Light background color to contrast with the dark background */
+    -fx-border-color: #ccc; /* Soft border for a subtle outline */
+    -fx-border-width: 2.0px; /* Width of the border */
+    -fx-text-fill: #333; /* Dark text color for readability */
+    -fx-padding: 7.0px 30.0px; /* More padding to make the button larger */
+    -fx-background-radius: 5.0px; /* Rounded corners for a modern look */
+    -fx-border-radius: 5.0px; /* Border radius to match the background */
+    -fx-font-size: 14.0px; /* Larger font size for better readability */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+    -fx-effect: dropshadow(gaussian, rgba(0.0,0.0,0.0,0.25), 10.0, 0.5, 0.0, 0.0); /* Adding subtle shadow for better visual appearance */
+    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#btnLogin:hover {
+    -fx-background-color: #e0e0e0; /* Slightly darker background on hover */
+    -fx-text-fill: #000; /* Darker text color on hover */
+}
+
+#btnExit{
+    -fx-background-color: #f8f8f8; /* Light background color to contrast with the dark background */
+    -fx-border-color: #ccc; /* Soft border for a subtle outline */
+    -fx-border-width: 2.0px; /* Width of the border */
+    -fx-text-fill: #333; /* Dark text color for readability */
+    -fx-padding: 7.0px 20.0px; /* Padding to make the buttons more substantial */
+    -fx-background-radius: 5.0px; /* Rounded corners for a modern look */
+    -fx-border-radius: 5.0px; /* Border radius to match the background */
+    -fx-font-size: 12.0px; /* Slightly larger font size for better readability */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+    -fx-effect: dropshadow(gaussian, rgba(0.0,0.0,0.0,0.25), 10.0, 0.5, 0.0, 0.0); /* Adding subtle shadow for better visual appearance */
+    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#btnExit:hover{
+    -fx-background-color: #e0e0e0; /* Slightly darker background on hover */
+    -fx-text-fill: #000; /* Darker text color on hover */
+}
+
+#Usernametxt, #Passwordtxt, #UserTypecb {
+    -fx-background-color: #f8f8f8; /* Light background color */
+    -fx-border-color: #ccc; /* Soft border for a subtle outline */
+    -fx-border-width: 1.0px; /* Width of the border */
+    -fx-padding: 7.0px; /* Padding to make the elements more substantial */
+    -fx-border-radius: 5.0px; /* Rounded corners for a modern look */
+    -fx-background-radius: 5.0px; /* Match the border radius */
+    -fx-font-size: 14.0px; /* Standard font size for readability */
+    -fx-text-fill: #333; /* Dark text color for readability */
+    -fx-pref-width: 200.0px; /* Fixed width for alignment */
+}
+
+#Usernametxt:focused, #Passwordtxt:focused, #UserTypecb:focused {
+    -fx-border-color: #7a7a7a; /* Darker border when focused */
+    -fx-background-color: #ffffff; /* White background when focused */
+}
+
+#UserTypecb {
+    -fx-arrow-button-color: #ccc; /* Color of the combo box arrow */
+}

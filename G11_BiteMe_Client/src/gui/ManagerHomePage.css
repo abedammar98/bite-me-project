@@ -1,0 +1,47 @@
+.root {
+    -fx-background-image: url('../images/Managerhomepage.png'); /* Replace with the path to your image */
+    -fx-background-size: cover; /* Adjust size to cover the entire background */
+    -fx-background-repeat: no-repeat; /* Prevent the image from repeating */
+    -fx-background-position: center center; /* Center the image */
+}
+
+#btnCreateAccount,#btnViewReports {
+    -fx-background-color: #f8f8f8; /* Light background color to contrast with the dark background */
+    -fx-border-color: #ccc; /* Soft border for a subtle outline */
+    -fx-border-width: 2px; /* Width of the border */
+    -fx-text-fill: #333; /* Dark text color for readability */
+    -fx-padding: 15px 30px; /* More padding to make the button larger */
+    -fx-background-radius: 5px; /* Rounded corners for a modern look */
+    -fx-border-radius: 5px; /* Border radius to match the background */
+    -fx-font-size: 15px; /* Larger font size for better readability */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0, 0); /* Adding subtle shadow for better visual appearance */
+    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#btnCreateAccount:hover,#btnViewReports:hover {
+    -fx-background-color: #e0e0e0; /* Slightly darker background on hover */
+    -fx-text-fill: #000; /* Darker text color on hover */
+}
+
+#btnLogout {
+    -fx-background-color: #f8f8f8; /* Light background color to contrast with the dark background */
+    -fx-border-color: #ccc; /* Soft border for a subtle outline */
+    -fx-border-width: 2px; /* Width of the border */
+    -fx-text-fill: #333; /* Dark text color for readability */
+    -fx-padding: 10px 20px; /* Padding to make the buttons more substantial */
+    -fx-background-radius: 5px; /* Rounded corners for a modern look */
+    -fx-border-radius: 5px; /* Border radius to match the background */
+    -fx-font-size: 14px; /* Slightly larger font size for better readability */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 10, 0.5, 0, 0); /* Adding subtle shadow for better visual appearance */
+    -fx-transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#btnLogout:hover {
+    -fx-background-color: #e0e0e0; /* Slightly darker background on hover */
+    -fx-text-fill: #000; /* Darker text color on hover */
+}
+
+

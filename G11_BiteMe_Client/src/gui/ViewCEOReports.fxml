@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="1315.0" stylesheets="@ViewCEOReports.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewCEOReportsController">
+	<children>
+		<Button fx:id="btnBack" layoutX="625.0" layoutY="678.0" mnemonicParsing="false" onAction="#getBackBtn" prefHeight="27.0" prefWidth="88.0" text="Back" />
+		<TabPane fx:id="TabPane" layoutX="286.0" layoutY="255.0" prefHeight="348.0" prefWidth="801.0" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab fx:id="Orderstab" closable="false" text="Orders Report">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView fx:id="ordertblview" layoutX="-11.0" prefHeight="346.0" prefWidth="801.0">
+									<columns>
+										<TableColumn fx:id="ResturantIDCol" prefWidth="97.3333740234375" text="Restaurant ID" />
+										<TableColumn fx:id="TotalOrdersCol" prefWidth="117.0" text="Total Orders" />
+										<TableColumn fx:id="SaladOrdersCol" prefWidth="129.0" text="Salad Orders" />
+										<TableColumn fx:id="SweetsOrdersCol" prefWidth="147.66668701171875" text="Sweets Orders" />
+										<TableColumn fx:id="DrinksOrdersCol" prefWidth="145.33331298828125" text="Drinks Orders" />
+										<TableColumn fx:id="MainMealOrdersCol" prefWidth="138.33331298828125" text="Main Meal Orders" />
+									</columns>
+								</TableView>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="Incometab" closable="false" text="Income Report">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView fx:id="incometblview" layoutX="-11.0" prefHeight="346.0" prefWidth="800.0">
+									<columns>
+										<TableColumn fx:id="ResturantIDCol1" prefWidth="97.3333740234375" text="Restaurant ID" />
+										<TableColumn fx:id="TotalRevenueCol" prefWidth="117.0" text="Total Revenue" />
+										<TableColumn fx:id="SaladRevenueCol" prefWidth="129.0" text="Salad Revenue" />
+										<TableColumn fx:id="SweetsRevenueCol" prefWidth="147.66668701171875" text="Sweets Revenue" />
+										<TableColumn fx:id="DrinksRevenueCol" prefWidth="145.33331298828125" text="Drinks Revenue" />
+										<TableColumn fx:id="MainMealRevenueCol" prefWidth="138.33331298828125" text="Main Meal Revenue" />
+									</columns>
+								</TableView>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="Performancetab" closable="false" text="Performance Report">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="301.0" prefWidth="800.0">
+							<children>
+								<HBox alignment="CENTER" layoutX="25.0" layoutY="10.0" spacing="10">
+									<Button fx:id="leftArrowBtn" onAction="#showPreviousRestaurant" text="←" />
+									<Label fx:id="restaurantIdLbl" text="Restaurant ID: " />
+									<Button fx:id="rightArrowBtn" onAction="#showNextRestaurant" text="→" />
+								</HBox>
+								<PieChart fx:id="piechartperformance" layoutX="25.0" layoutY="47.0" prefHeight="240.0" prefWidth="464.0" />
+								<Label fx:id="avgdelatTimelbl" layoutX="525.0" layoutY="128.0" textAlignment="CENTER">
+									<font>
+										<Font name="System Bold" size="22.0" />
+									</font>
+								</Label>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+		<ComboBox fx:id="yearCb" layoutX="602.0" layoutY="159.0" onAction="#initMonthCb" prefWidth="150.0" />
+		<ComboBox fx:id="monthCb" layoutX="879.0" layoutY="159.0" onAction="#updateTableValues" prefWidth="150.0" />
+		<ComboBox fx:id="branchCb" layoutX="355.0" layoutY="159.0" onAction="#initYearsCb" prefWidth="150.0" />
+	</children>
+</AnchorPane>

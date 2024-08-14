@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="855.0" prefWidth="1315.0" stylesheets="@PickUpType.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PickPickUpTypeController">
+   <children>
+      <Button id="btnExit" fx:id="btnExit" layoutX="38.0" layoutY="793.0" mnemonicParsing="false" onAction="#getBackBtn" text="Back" />
+      <Button fx:id="btnNext" layoutX="1159.0" layoutY="786.0" mnemonicParsing="false" onAction="#getNextBtn" prefHeight="49.0" prefWidth="125.0" text="Next">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="idTimetxtField" layoutX="553.0" layoutY="528.0" prefHeight="25.0" prefWidth="149.0" promptText="HH:MM" />
+      <DatePicker fx:id="idDatePicker" layoutX="553.0" layoutY="606.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="idLocation" layoutX="553.0" layoutY="683.0" prefHeight="25.0" prefWidth="149.0" />
+      <ToggleButton fx:id="ToggleBtnTakeAway" layoutX="400.0" layoutY="259.0" onAction="#handleToggleButtonAction" prefHeight="132.0" prefWidth="138.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="photoToggleGroup" />
+         </toggleGroup></ToggleButton>
+      <ToggleButton fx:id="ToggleBtnDelivery" layoutX="709.0" layoutY="259.0" onAction="#handleToggleButtonAction" prefHeight="132.0" prefWidth="150.0" toggleGroup="$photoToggleGroup" />
+      <ImageView fx:id="imageViewTakeAway" disable="true" fitHeight="150.0" fitWidth="150.0" layoutX="394.0" layoutY="250.0">
+         <image>
+            <Image url="@../images/delivery-man.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImageViewDelivery" disable="true" fitHeight="150.0" fitWidth="150.0" layoutX="703.0" layoutY="250.0">
+         <image>
+            <Image url="@../images/fast-delivery.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="SharedDeliveryCb" layoutX="553.0" layoutY="766.0" prefHeight="25.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>
